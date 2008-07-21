@@ -20,7 +20,7 @@ import Products.ZenModel.RRDDataSource as RRDDataSource
 from Products.ZenModel.ZenPackPersistence import ZenPackPersistence
 from AccessControl import ClassSecurityInfo, Permissions
 from Products.ZenUtils.ZenTales import talesCompile, getEngine
-
+from Products.ZenUtils.Utils import binPath
 
 class FtpMonitorDataSource(ZenPackPersistence, RRDDataSource.RRDDataSource):
 
@@ -98,7 +98,7 @@ class FtpMonitorDataSource(ZenPackPersistence, RRDDataSource.RRDDataSource):
         return True
 
     def getCommand(self, context):
-        parts = ['check_ftp']
+        parts = [binPath('check_ftp')]
         if self.hostname:
             parts.append('-H %s' % self.hostname)
         if self.port:
@@ -127,10 +127,9 @@ class FtpMonitorDataSource(ZenPackPersistence, RRDDataSource.RRDDataSource):
             parts.append('-D %s' % self.certificate)
         if self.useSSL:
             parts.append('-S %s' % self.useSSL)
-            
+
         cmd = ' '.join(parts)
-        cmd = '$ZENHOME/libexec/' + \
-                    RRDDataSource.RRDDataSource.getCommand(self, context, cmd)
+        cmd = RRDDataSource.RRDDataSource.getCommand(self, context, cmd)
         return cmd
 
     def checkCommandPrefix(self, context, cmd):
