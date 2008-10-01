@@ -2,6 +2,9 @@
 <objects>
 <!-- ('', 'zport', 'dmd', 'Devices', 'rrdTemplates', 'FtpMonitor') -->
 <object id='/zport/dmd/Devices/rrdTemplates/FtpMonitor' module='Products.ZenModel.RRDTemplate' class='RRDTemplate'>
+<property type="string" id="targetPythonClass" mode="w" >
+Products.ZenModel.Device
+</property>
 <tomanycont id='datasources'>
 <object id='FtpMonitor' module='ZenPacks.zenoss.FtpMonitor.datasources.FtpMonitorDataSource' class='FtpMonitorDataSource'>
 <property select_variable="sourcetypes" type="selection" id="sourcetype" mode="w" >
