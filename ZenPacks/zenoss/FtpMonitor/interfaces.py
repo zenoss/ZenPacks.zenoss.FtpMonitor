@@ -18,17 +18,17 @@ from Products.Zuul.utils import ZuulMessageFactory as _t
 class IFtpMonitorDataSourceInfo(IRRDDataSourceInfo):
     timeout = schema.Int(title=_t(u'Timeout (seconds)'))
     cycletime = schema.Int(title=_t(u'Cycle Time (seconds)'))
-    hostname = schema.Text(title=_t(u'Host Name'))
+    hostname = schema.TextLine(title=_t(u'Host Name'))
     port = schema.Int(title=_t(u'Port'))
-    sendString = schema.Text(title=_t(u'Send String'))
-    expectString = schema.Text(title=_t(u'Expect String'))
-    quitString = schema.Text(title=_t(u'Quit String'))
+    sendString = schema.TextLine(title=_t(u'Send String'))
+    expectString = schema.TextLine(title=_t(u'Expect String'))
+    quitString = schema.TextLine(title=_t(u'Quit String'))
     refuse = schema.Choice(title=_t(u'Refuse'),
                            vocabulary="ftpMonitorStatesVocabulary")
     mismatch = schema.Choice(title=_t(u'Mismatch'),
                              vocabulary="ftpMonitorStatesVocabulary")
-    maxBytes = schema.Text(title=_t(u'Max Bytes'))
-    delay = schema.Text(title=_t(u'Delay'))
+    maxBytes = schema.TextLine(title=_t(u'Max Bytes'))
+    delay = schema.TextLine(title=_t(u'Delay'))
     certificate = schema.Int(title=_t(u'Certificate (minimum days for which a certificate is valid)'))
     useSSL = schema.Bool(title=_t(u'Use SSL'))
     warning = schema.Int(title=_t(u'Warning Response Time (seconds)'))
