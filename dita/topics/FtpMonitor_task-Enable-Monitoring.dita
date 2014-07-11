@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "urn:pubid:zenoss.com:doctypes:dita:dtd:task" "task.dtd">
+<task id="d30e66"><title>Enable Monitoring</title><taskbody><context><p>To enable monitoring of the device:</p></context><steps-informal><ol>
+      <li>
+        <p>Select Infrastructure from the navigation bar.</p>
+      </li>
+
+      <li>
+        <p>Click the device name in the device list.</p>
+
+        <p>The device overview page appears.</p>
+      </li>
+
+      <li>
+        <p>Expand Monitoring Templates in the left panel, and then select
+        Device.</p>
+      </li>
+
+      <li>
+        <p>Select Bind Templates from the Action menu.</p>
+
+        <p>The Bind Templates dialog appears.</p>
+      </li>
+
+      <li>
+        <p>Select the FTPMonitor template and move it to the list of
+        selected templates.</p>
+      </li>
+
+      <li>
+        <p>Click <b>Save</b>.</p>
+
+        <p>The FTPMonitor template appears under Monitoring
+        Templates.</p>
+      </li>
+
+      <li>
+        <p>Select the FTPMonitor template and change options as
+        needed.</p>
+
+        <table>
+          <title>FTPMonitor Basic Data Source Options</title>
+
+          <tgroup cols="2">
+            <colspec colname="c1" colwidth="1*"/>
+            <colspec colname="c2" colwidth="4*"/>
+            <thead>
+              <row>
+                <entry>Option</entry>
+
+                <entry>Description</entry>
+              </row>
+            </thead>
+
+            <tbody>
+              <row>
+                <entry><p>Port</p></entry>
+
+                <entry><p>The port to connect to FTP server (default
+                21)</p></entry>
+              </row>
+
+              <row>
+                <entry><p>Send String</p></entry>
+
+                <entry><p>Command string to send to the
+                server</p></entry>
+              </row>
+
+              <row>
+                <entry><p>Expect String</p></entry>
+
+                <entry><p>A string to expect in server
+                response</p></entry>
+              </row>
+
+              <row>
+                <entry><p>Mismatch</p></entry>
+
+                <entry><p>If the expected string does not match the string
+                returned from the remote server, create an event with one of
+                these states: ok, warn, crit (default: warn)</p></entry>
+              </row>
+
+              <row>
+                <entry><p>Quit String</p></entry>
+
+                <entry><p>Command to send to the remote server to end the
+                session</p></entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </li>
+    </ol></steps-informal></taskbody></task>

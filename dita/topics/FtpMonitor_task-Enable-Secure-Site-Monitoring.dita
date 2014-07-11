@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task
+  PUBLIC "urn:pubid:zenoss.com:doctypes:dita:dtd:task" "task.dtd">
+<task id="d30e216"><title>Enable Secure Site Monitoring</title><taskbody><context><p>To enable secure site monitoring:</p></context><steps-informal><ol>
+      <li>
+        <p>Select Infrastructure from the navigation bar.</p>
+      </li>
+
+      <li>
+        <p>Click the device name in the devices list.</p>
+
+        <p>The device overview page appears.</p>
+      </li>
+
+      <li>
+        <p>Expand Monitoring Templates in the left panel.</p>
+      </li>
+
+      <li>
+        <p>Select the FTPMonitor template and change options as
+        needed.</p>
+
+        <table>
+          <title>FTPMonitor Secure Data Source Options</title>
+
+          <tgroup cols="2">
+            <colspec colname="c1" colwidth="1*"/>
+            <colspec colname="c2" colwidth="5*"/>
+            <thead>
+              <row>
+                <entry>Option</entry>
+
+                <entry>Description</entry>
+              </row>
+            </thead>
+
+            <tbody>
+              <row>
+                <entry><p>Port</p></entry>
+
+                <entry><p>The port to connect to FTP server (default
+                21).</p></entry>
+              </row>
+
+              <row>
+                <entry><p>Certificate</p></entry>
+
+                <entry><p>Minimum days for which a certificate is
+                valid</p></entry>
+              </row>
+
+              <row>
+                <entry><p>Use SSL</p></entry>
+
+                <entry><p>Use SSL for the connection</p></entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </li>
+    </ol></steps-informal></taskbody></task>
