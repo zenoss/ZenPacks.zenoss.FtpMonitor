@@ -15,7 +15,7 @@ from Products.Zuul.utils import ZuulMessageFactory as _t
 
 class IFtpMonitorDataSourceInfo(IRRDDataSourceInfo):
     timeout = schema.Int(title=_t(u'Timeout (seconds)'))
-    cycletime = schema.Int(title=_t(u'Cycle Time (seconds)'))
+    cycletime = schema.TextLine(title=_t(u'Cycle Time (seconds)'))
     hostname = schema.TextLine(title=_t(u'Host Name'))
     port = schema.Int(title=_t(u'Port'))
     sendString = schema.TextLine(title=_t(u'Send String'))
