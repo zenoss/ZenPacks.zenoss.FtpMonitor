@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "urn:pubid:zenoss.com:doctypes:dita:dtd:map" "map.dtd">
+<map>
+   <title>FtpMonitor</title>
+   <topicref href="topics/FtpMonitor.dita">
+      <topicref href="topics/FtpMonitor_ref-Prerequisites.dita"/>
+      <topicref href="topics/FtpMonitor_task-Enable-Monitoring.dita"/>
+      <topicref href="topics/FtpMonitor_task-Enable-Secure-Site-Monitoring.dita"/>
+      <topicref href="topics/FtpMonitor_task-Tuning-for-Site-Responsiveness.dita"/>
+      <topicref href="topics/FtpMonitor_ref-Daemons.dita"/>
+   </topicref>
+</map>
